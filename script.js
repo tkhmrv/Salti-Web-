@@ -1,7 +1,7 @@
 // header animation
 const header = document.querySelector("header");
 
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 60);
 })
 
@@ -31,6 +31,7 @@ $(document).ready(function () {
     });
 });
 
+// burger menu logic
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 

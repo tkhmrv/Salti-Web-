@@ -41,6 +41,12 @@ header {
     box-shadow: 0px 3px 10px 0px rgba(34, 60, 80, 0.2);
 }
 
+header.sticky {
+    padding: 15px 15%;
+    background: var(--bg-color);
+    box-shadow: 1px 4px 8px rgb(15, 54, 55 / 10%);
+}
+
 .logo img {
     width: 100%;
     height: auto;
@@ -102,6 +108,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1rem;
+    margin-top: 2rem;
 }
 
 .home-text h1 {
@@ -172,12 +179,12 @@ section {
 .home-img img {
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
 
-header.sticky {
-    padding: 15px 15%;
-    background: var(--bg-color);
-    box-shadow: 1px 4px 8px rgb(15, 54, 55 / 10%);
+.category {
+    position: relative;
+    display: grid;
 }
 
 .category-content {
@@ -496,7 +503,7 @@ form {
     padding: 10px 14px;
     background: var(--text-color);
     color: white;
-    border-radius: 20px; 
+    border-radius: 20px;
     transition: all ease 0.50s;
 }
 
@@ -546,6 +553,7 @@ form {
     margin-bottom: 15px;
     transition: all ease 0.50s;
 }
+
 .footer-box h3 {
     margin-bottom: 22px;
     font-size: 20px;
@@ -566,7 +574,7 @@ form {
     gap: 30px;
 }
 
-.end-text p{
+.end-text p {
     font-size: 15px;
 }
 
@@ -578,21 +586,26 @@ form {
     header {
         padding: 24px 8%;
     }
+
     section {
         padding: 80px 8% 50px;
     }
+
     .header.sticky {
         padding: 15px 8%;
     }
-    .home-img{
+
+    .home-img {
         height: 700px;
         width: 600px;
         object-fit: cover;
         padding-top: 40px;
     }
+
     .home-img img {
         width: 100%;
     }
+
     .end-content {
         padding: 18px 8%;
     }
@@ -602,19 +615,24 @@ form {
     header {
         padding: 20px 5%;
     }
+
     section {
         padding: 80px 5% 50px;
     }
+
     header.sticky {
         padding: 13px 5%;
     }
-    .home-img{
+
+    .home-img {
         height: 650px;
         width: 550px;
     }
+
     .end-content {
         padding: 15px 5%;
     }
+
     :root {
         --h1-font: 4.6rem;
         --h2-font: 3rem;
@@ -627,15 +645,19 @@ form {
         padding: 15px;
         border-radius: 20px;
     }
+
     .home {
         height: 80vh;
     }
+
     #menu-icon {
         display: block;
     }
+
     header.sticky {
         background: white;
     }
+
     .navlist {
         position: absolute;
         top: 100%;
@@ -661,12 +683,14 @@ form {
 
     .navlist.open {
         right: 0;
-    }:root {
+    }
+
+    :root {
         --h1-font: 4rem;
         --h2-font: 2.7rem;
     }
-    
-    .home-img{
+
+    .home-img {
         height: 600px;
         width: 500px;
     }
@@ -690,7 +714,9 @@ form {
     .home-text h1 {
         width: 100%;
         max-width: 700px;
-    }:root {
+    }
+
+    :root {
         --h1-font: 3.4rem;
         --h2-font: 2.3rem;
     }
@@ -712,7 +738,9 @@ form {
     .home-img {
         height: 490px;
         width: 400px;
-    }:root {
+    }
+
+    :root {
         --h1-font: 3rem;
         --h2-font: 2.7rem;
     }
@@ -722,7 +750,9 @@ form {
     .home-img {
         height: 370px;
         width: 350px;
-    }:root {
+    }
+
+    :root {
         --h1-font: 3rem;
         --h2-font: 2.7rem;
     }
